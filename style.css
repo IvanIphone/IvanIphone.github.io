@@ -581,6 +581,7 @@ body {
 
 #title {
   position: absolute;
+  top: 60%;
   left: 0;
   right: 0;
   color: #fff;
