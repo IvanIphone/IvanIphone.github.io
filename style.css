@@ -578,19 +578,23 @@ body {
     1772px 1510px #fff, 1131px 1266px #fff, 184px 1179px #fff,
     1850px 1669px #fff, 820px 1727px #fff;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+}
 
 #title {
-  position: absolute;
+  /* position: absolute;
   top: 60%;
   left: 0;
-  right: 0;
+  right: 0; */
   color: #fff;
   text-align: center;
   font-family: "lato", sans-serif;
   font-weight: 300;
   font-size: 50px;
   letter-spacing: 10px;
-  margin-top: -60px;
+  margin-top: 30px;
   padding-left: 10px;
 }
 
