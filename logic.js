@@ -4,7 +4,7 @@
     hour = minute * 60,
     day = hour * 24;
 
-  let birthday = "May 28, 2021 01:00:00",
+  let birthday = "May 21, 2021 01:00:00",
     countDown = new Date(birthday).getTime(),
     x = setInterval(function () {
       let now = new Date().getTime(),
@@ -26,8 +26,10 @@
         let headline = document.getElementById("headline"),
           countdown = document.getElementById("countdown"),
           content = document.getElementById("content");
+          title = document.querySelector(".title");
 
         headline.innerText = "We are together!";
+        title.style.display = "none";
         countdown.style.display = "none";
         content.style.display = "block";
 
