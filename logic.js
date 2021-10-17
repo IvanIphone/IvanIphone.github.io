@@ -20,21 +20,5 @@
         (document.getElementById("seconds").innerText = Math.floor(
           (distance % minute) / second
         ));
-
-      //do something later when date is reached
-      // if (distance < 0) {
-      //   let headline = document.getElementById("headline"),
-      //     countdown = document.getElementById("countdown"),
-      //     content = document.getElementById("content");
-      //     title = document.querySelector(".title");
-
-      //   headline.innerText = "We are together!";
-      //   title.style.display = "none";
-      //   countdown.style.display = "none";
-      //   content.style.display = "block";
-
-      //   clearInterval(x);
-      // }
-      //seconds
     }, 0);
 })();
