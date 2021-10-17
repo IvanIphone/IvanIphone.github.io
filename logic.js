@@ -4,11 +4,11 @@
     hour = minute * 60,
     day = hour * 24;
 
-  let birthday = "May 28, 2021 02:35:00",
+  let birthday = "Apr 25, 2021 22:00:00",
     countDown = new Date(birthday).getTime(),
     x = setInterval(function () {
       let now = new Date().getTime(),
-        distance = countDown - now;
+        distance = now - countDown;
 
       (document.getElementById("days").innerText = Math.floor(distance / day)),
         (document.getElementById("hours").innerText = Math.floor(
@@ -22,19 +22,19 @@
         ));
 
       //do something later when date is reached
-      if (distance < 0) {
-        let headline = document.getElementById("headline"),
-          countdown = document.getElementById("countdown"),
-          content = document.getElementById("content");
-          title = document.querySelector(".title");
+      // if (distance < 0) {
+      //   let headline = document.getElementById("headline"),
+      //     countdown = document.getElementById("countdown"),
+      //     content = document.getElementById("content");
+      //     title = document.querySelector(".title");
 
-        headline.innerText = "We are together!";
-        title.style.display = "none";
-        countdown.style.display = "none";
-        content.style.display = "block";
+      //   headline.innerText = "We are together!";
+      //   title.style.display = "none";
+      //   countdown.style.display = "none";
+      //   content.style.display = "block";
 
-        clearInterval(x);
-      }
+      //   clearInterval(x);
+      // }
       //seconds
     }, 0);
 })();
